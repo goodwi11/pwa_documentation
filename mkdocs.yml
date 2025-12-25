@@ -1,6 +1,6 @@
 site_name: Документация Comsign PWA
 theme:
-  name: material
+  name: readthedocs
 
 docs_dir: docs
 
