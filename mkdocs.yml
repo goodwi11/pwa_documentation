@@ -10,5 +10,6 @@ docs_dir: docs
 nav:
   - Главная: index.md
   - Обзор: overview.md
+  - Главная: sections/main.md
 
 site_url: !ENV READTHEDOCS_CANONICAL_URL
