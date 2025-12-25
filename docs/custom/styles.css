@@ -159,3 +159,23 @@ footer {
 .wy-nav-side {
   outline: 6px solid #00ff00 !important;
 }
+
+/* FORCE sidebar color for MkDocs RTD theme */
+.wy-nav-side,
+.wy-nav-side * {
+  background-color: #EB333E !important;
+}
+
+/* Если чёрный — это граница/тень между меню и контентом */
+.wy-nav-side,
+.wy-nav-side .wy-side-scroll,
+.wy-nav-side .wy-nav-side,
+.wy-nav-side .wy-menu-vertical {
+  border-right: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Часто "чёрным" выглядит именно inner scroll container */
+.wy-side-scroll {
+  background: #EB333E !important;
+}
