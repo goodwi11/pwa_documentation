@@ -70,11 +70,9 @@ table.docutils caption {
 .rst-versions {
   display: none !important;
 }
-
-footer {
-  display: none !important;
-}
-
 .ethical-rtd {
   visibility: hidden !important;
+}
+footer {
+  display: none !important;
 }
