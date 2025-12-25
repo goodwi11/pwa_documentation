@@ -5,9 +5,9 @@
     tools:
       python: "3.10"
 
-  python:
-    install:
-      - requirements: pwa_documentation/requirements.txt
+  mkdocs:
+  configuration: mkdocs.yml
 
-  sphinx:
-    configuration: pwa_documentation/source/conf.py
+python:
+  install:
+    - requirements: requirements.txt
