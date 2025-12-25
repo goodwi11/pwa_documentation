@@ -42,6 +42,15 @@ html, body {
   padding-bottom: 0;
 }
 
+/* Фон всего левого сайдбара (MkDocs ReadTheDocs theme) */
+.wy-nav-side,
+.wy-side-scroll,
+.wy-side-scroll .wy-side-nav-search,
+.wy-nav-side .wy-menu-vertical,
+.wy-nav-side .wy-menu-vertical ul {
+  background: #EB333E !important;
+}
+
 .wy-side-nav-search {
   background: transparent;
 }
