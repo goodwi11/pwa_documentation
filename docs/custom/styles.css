@@ -1,177 +1,78 @@
-/* (опционально) если хочешь гарантированно Inter/Space Mono,
-   лучше подключить шрифты. Можно убрать, если не нужно. */
-/*
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap");
-*/
-
-html, body {
-  background: #fff;
-  color: #000;
-  font-family: Inter, -apple-system, system-ui, "Segoe UI", "Helvetica Neue", Arial,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+body {
+  background: #fff !important;
+  color: #000 !important;
 }
-
-/* Заголовки */
-.rst-content h1,
-.rst-content h2,
-.rst-content h3,
-.rst-content h4,
-.rst-content h5,
-.rst-content h6 {
+*, h1, h2, h3, h4, h5 {
+  font-family: Inter, -apple-system, "system-ui", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+}
+h1, h2, h3, h4, h5 {
   font-weight: 700;
-  letter-spacing: -0.03em;
+  letter-spacing: -.03em;
 }
-
-.rst-content h1 {
-  font-size: 2.5rem;
+h1 {
+  font-size: 2.5rem !important;
 }
-
-/* Ссылки */
-.rst-content a,
-.rst-content a:visited {
+a {
   color: #295ada;
   font-weight: 600;
 }
-.rst-content a:hover {
+a:hover {
   color: #214cbc;
 }
-
-/* Левое меню */
-.wy-nav-side {
-  background: #EB333E;
-  padding-bottom: 0;
-}
-
-/* Sidebar background: MkDocs ReadTheDocs theme (more aggressive) */
-.wy-nav-side,
-.wy-side-scroll,
-.wy-nav-side .wy-side-scroll,
-.wy-nav-side .wy-menu,
-.wy-nav-side .wy-menu-vertical,
-.wy-nav-side .wy-menu-vertical ul,
-.wy-nav-side .wy-menu-vertical li {
-  background-color: #EB333E !important;
-  background-image: none !important;
-  background: #EB333E !important;
-}
-
-/* Иногда фон приходит через псевдоэлементы */
-.wy-nav-side::before,
-.wy-nav-side::after,
-.wy-side-scroll::before,
-.wy-side-scroll::after {
-  background: #EB333E !important;
-  background-color: #EB333E !important;
-}
-
-.wy-side-nav-search {
-  background: transparent;
-}
-
-.wy-nav-top {
-  background: #181818;
-}
-
-/* Hover и текущий пункт меню */
 .wy-menu-vertical a:hover {
-  background-color: #dfebff;
+  background-color: #dfebff !important;
 }
-
-.wy-menu-vertical li.current > a,
-.wy-menu-vertical li.on a {
-  background-color: #fff;
+.wy-menu-vertical li.current>a, .wy-menu-vertical li.on a {
+  background-color: #fff !important;
 }
-
-/* Скрыть "caption" (если есть) */
+.wy-nav-side {
+  background: #000 !important;
+  padding-bottom: 0 !important;
+}
+.wy-nav-top {
+  background: #181818 !important;
+}
+.wy-side-nav-search {
+  background: transparent !important;
+}
 .wy-menu.wy-menu-vertical > .caption {
-  display: none;
+  display: none !important;
 }
-
-/* Хлебные крошки справа */
 .wy-breadcrumbs-aside {
-  display: none;
+  display: none !important;
 }
-
-/* Поле поиска */
-.wy-side-nav-search input[type="text"] {
-  border: none;
-  border-radius: 6px;
+.wy-side-nav-search input[type=text] {
+  border: none !important;
+  border-radius: 6px !important;
 }
-
-/* Контентная область */
-.wy-nav-content,
-.wy-nav-content-wrap {
-  background: transparent;
+.wy-nav-content, .wy-nav-content-wrap {
+  background: transparent !important;
 }
-
-/* Если хочешь шире контент (частая боль RTD темы) */
-.wy-nav-content {
-  max-width: 1200px; /* поставь none, если хочешь на всю ширину */
+.wy-table-responsive table td, .wy-table-responsive table th {
+  white-space: initial !important;
 }
-
-/* Таблицы: разрешить перенос */
-.rst-content table td,
-.rst-content table th {
-  white-space: normal;
+code, code *, pre, pre * {
+  font-family: "Space Mono", monospace !important;
 }
-
-.rst-content table {
-  width: 100%;
+.rst-content code, .rst-content tt, code {
+  color: #dc3545 !important;
+  background: initial !important;
+  border: initial !important;
+  padding: initial !important;
 }
-
-/* Код */
-code, pre, kbd, samp {
-  font-family: "Space Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+table.docutils {
+  width: 100% !important;
 }
-
-/* Inline code */
-.rst-content code {
-  color: #dc3545;
-  background: transparent;
-  border: 0;
-  padding: 0;
+table.docutils caption {
+  font: initial !important;
+  font-weight: bold !important;
 }
-
-/* Code blocks: не ломаем подсветку */
-.rst-content pre {
-  border: 0;
-}
-.rst-content pre code {
-  color: inherit;
-  background: transparent;
-}
-
-/* Панель версий (если есть) */
 .rst-versions {
-  display: none;
+  display: none !important;
 }
-
-/* Футер (если хочешь убрать полностью) */
-footer {
-  display: none;
-}
-
 .ethical-rtd {
   visibility: hidden !important;
 }
-
-/* FORCE sidebar color for MkDocs RTD theme */
-.wy-nav-side,
-.wy-nav-side * {
-  background-color: #EB333E !important;
-}
-
-/* Если чёрный — это граница/тень между меню и контентом */
-.wy-nav-side,
-.wy-nav-side .wy-side-scroll,
-.wy-nav-side .wy-nav-side,
-.wy-nav-side .wy-menu-vertical {
-  border-right: 0 !important;
-  box-shadow: none !important;
-}
-
-/* Часто "чёрным" выглядит именно inner scroll container */
-.wy-side-scroll {
-  background: #EB333E !important;
+footer {
+  display: none !important;
 }
