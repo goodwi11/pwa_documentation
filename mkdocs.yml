@@ -2,6 +2,9 @@ site_name: Документация Comsign PWA
 theme:
   name: readthedocs
 
+extra_css:
+  - custom/styles.css
+
 docs_dir: docs
 
 nav:
