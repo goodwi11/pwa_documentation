@@ -1,78 +1,134 @@
-body {
-  background: #fff !important;
-  color: #000 !important;
+/* (опционально) если хочешь гарантированно Inter/Space Mono,
+   лучше подключить шрифты. Можно убрать, если не нужно. */
+/*
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap");
+*/
+
+html, body {
+  background: #fff;
+  color: #000;
+  font-family: Inter, -apple-system, system-ui, "Segoe UI", "Helvetica Neue", Arial,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-*, h1, h2, h3, h4, h5 {
-  font-family: Inter, -apple-system, "system-ui", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-}
-h1, h2, h3, h4, h5 {
+
+/* Заголовки */
+.rst-content h1,
+.rst-content h2,
+.rst-content h3,
+.rst-content h4,
+.rst-content h5,
+.rst-content h6 {
   font-weight: 700;
-  letter-spacing: -.03em;
+  letter-spacing: -0.03em;
 }
-h1 {
-  font-size: 2.5rem !important;
+
+.rst-content h1 {
+  font-size: 2.5rem;
 }
-a {
+
+/* Ссылки */
+.rst-content a,
+.rst-content a:visited {
   color: #295ada;
   font-weight: 600;
 }
-a:hover {
+.rst-content a:hover {
   color: #214cbc;
 }
-.wy-menu-vertical a:hover {
-  background-color: #dfebff !important;
-}
-.wy-menu-vertical li.current>a, .wy-menu-vertical li.on a {
-  background-color: #fff !important;
-}
+
+/* Левое меню */
 .wy-nav-side {
-  background: #EB333E !important;
-  padding-bottom: 0 !important;
+  background: #EB333E;
+  padding-bottom: 0;
 }
-.wy-nav-top {
-  background: #181818 !important;
-}
+
 .wy-side-nav-search {
-  background: transparent !important;
+  background: transparent;
 }
+
+.wy-nav-top {
+  background: #181818;
+}
+
+/* Hover и текущий пункт меню */
+.wy-menu-vertical a:hover {
+  background-color: #dfebff;
+}
+
+.wy-menu-vertical li.current > a,
+.wy-menu-vertical li.on a {
+  background-color: #fff;
+}
+
+/* Скрыть "caption" (если есть) */
 .wy-menu.wy-menu-vertical > .caption {
-  display: none !important;
+  display: none;
 }
+
+/* Хлебные крошки справа */
 .wy-breadcrumbs-aside {
-  display: none !important;
+  display: none;
 }
-.wy-side-nav-search input[type=text] {
-  border: none !important;
-  border-radius: 6px !important;
+
+/* Поле поиска */
+.wy-side-nav-search input[type="text"] {
+  border: none;
+  border-radius: 6px;
 }
-.wy-nav-content, .wy-nav-content-wrap {
-  background: transparent !important;
+
+/* Контентная область */
+.wy-nav-content,
+.wy-nav-content-wrap {
+  background: transparent;
 }
-.wy-table-responsive table td, .wy-table-responsive table th {
-  white-space: initial !important;
+
+/* Если хочешь шире контент (частая боль RTD темы) */
+.wy-nav-content {
+  max-width: 1200px; /* поставь none, если хочешь на всю ширину */
 }
-code, code *, pre, pre * {
-  font-family: "Space Mono", monospace !important;
+
+/* Таблицы: разрешить перенос */
+.rst-content table td,
+.rst-content table th {
+  white-space: normal;
 }
-.rst-content code, .rst-content tt, code {
-  color: #dc3545 !important;
-  background: initial !important;
-  border: initial !important;
-  padding: initial !important;
+
+.rst-content table {
+  width: 100%;
 }
-table.docutils {
-  width: 100% !important;
+
+/* Код */
+code, pre, kbd, samp {
+  font-family: "Space Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
 }
-table.docutils caption {
-  font: initial !important;
-  font-weight: bold !important;
+
+/* Inline code */
+.rst-content code {
+  color: #dc3545;
+  background: transparent;
+  border: 0;
+  padding: 0;
 }
+
+/* Code blocks: не ломаем подсветку */
+.rst-content pre {
+  border: 0;
+}
+.rst-content pre code {
+  color: inherit;
+  background: transparent;
+}
+
+/* Панель версий (если есть) */
 .rst-versions {
-  display: none !important;
+  display: none;
+}
+
+/* Футер (если хочешь убрать полностью) */
+footer {
+  display: none;
 }
 .ethical-rtd {
   visibility: hidden !important;
-}
-footer {
-  display: none !important;
 }
