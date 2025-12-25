@@ -138,6 +138,11 @@ code, pre, kbd, samp {
 footer {
   display: none;
 }
+
 .ethical-rtd {
   visibility: hidden !important;
+}
+
+.wy-nav-side {
+  outline: 6px solid #00ff00 !important;
 }
