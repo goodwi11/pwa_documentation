@@ -156,10 +156,6 @@ footer {
   visibility: hidden !important;
 }
 
-.wy-nav-side {
-  outline: 6px solid #00ff00 !important;
-}
-
 /* FORCE sidebar color for MkDocs RTD theme */
 .wy-nav-side,
 .wy-nav-side * {
