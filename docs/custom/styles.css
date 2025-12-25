@@ -42,13 +42,26 @@ html, body {
   padding-bottom: 0;
 }
 
-/* Фон всего левого сайдбара (MkDocs ReadTheDocs theme) */
+/* Sidebar background: MkDocs ReadTheDocs theme (more aggressive) */
 .wy-nav-side,
 .wy-side-scroll,
-.wy-side-scroll .wy-side-nav-search,
+.wy-nav-side .wy-side-scroll,
+.wy-nav-side .wy-menu,
 .wy-nav-side .wy-menu-vertical,
-.wy-nav-side .wy-menu-vertical ul {
+.wy-nav-side .wy-menu-vertical ul,
+.wy-nav-side .wy-menu-vertical li {
+  background-color: #EB333E !important;
+  background-image: none !important;
   background: #EB333E !important;
+}
+
+/* Иногда фон приходит через псевдоэлементы */
+.wy-nav-side::before,
+.wy-nav-side::after,
+.wy-side-scroll::before,
+.wy-side-scroll::after {
+  background: #EB333E !important;
+  background-color: #EB333E !important;
 }
 
 .wy-side-nav-search {
