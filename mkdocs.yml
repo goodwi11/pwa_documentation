@@ -1,6 +1,7 @@
 site_name: Документация Comsign PWA
 theme:
   name: readthedocs
+  favicon: assets/pwa_icon.png
 
 docs_dir: docs
 
