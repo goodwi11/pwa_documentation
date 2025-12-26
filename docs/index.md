@@ -7,6 +7,6 @@
  - [Обзор](overview/)
  - [Главная](sections/main/)
  - [Конструктор](sections/builder/)
-   - [Основное](sections/builder/#_2)
+   - [Основное](sections/builder/main)
  - [Статистика](sections/statistics/)
  - [Пуши](sections/push/)
