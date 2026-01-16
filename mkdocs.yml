@@ -16,8 +16,8 @@ nav:
 
 site_url: !ENV READTHEDOCS_CANONICAL_URL
 
-# extra_css:
-#   - custom/styles.css
+extra_css:
+  - custom/styles.css
 
 
 markdown_extensions:
