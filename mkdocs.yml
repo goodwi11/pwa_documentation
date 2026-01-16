@@ -13,8 +13,8 @@ nav:
   - Личный кабинет: clients_area.md
   - Главная: sections/main.md
   - Конструктор: sections/builder.md
-  - Статистика: sections/statistics.md
   - Пуши: sections/push.md
+  - Статистика: sections/statistics.md
 
 site_url: !ENV READTHEDOCS_CANONICAL_URL
 
