@@ -5,6 +5,7 @@
 ----------
 
  - [Обзор](overview/)
+ - [Быстрый старт](start/)
  - [Главная](sections/main/)
  - [Конструктор](sections/builder/)
      - [Основное](sections/builder/#main)
