@@ -6,6 +6,7 @@
 
  - [Обзор](overview/)
  - [Быстрый старт](start/)
+ - [Личный кабинет](clients_area/)
  - [Главная](sections/main/)
  - [Конструктор](sections/builder/)
      - [Основное](sections/builder/#main)
