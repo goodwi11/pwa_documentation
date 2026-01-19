@@ -15,5 +15,5 @@
      - [Контент](sections/builder/#contenыt)
      - [Пуши](sections/builder/#push)
      - [Клоакинг](sections/builder/#cloaking)
- - [Пуши](sections/push/)
+ - [Push-уведомления](sections/push/)
  - [Статистика](sections/statistics/)
