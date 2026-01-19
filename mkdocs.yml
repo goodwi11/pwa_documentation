@@ -10,7 +10,7 @@ docs_dir: docs
 nav:
   - Обзор: overview.md
   - Быстрый старт: start.md
-  - Личный кабинет: clients_area.md
+  - Главная: main.md
   - Конструктор: sections/builder.md
   - Пуши: sections/push.md
   - Статистика: sections/statistics.md
