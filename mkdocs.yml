@@ -12,7 +12,7 @@ nav:
   - Быстрый старт: start.md
   - Главная: main.md
   - Конструктор: sections/builder.md
-  - Пуши: sections/push.md
+  - Push-уведомления: sections/push.md
   - Статистика: sections/statistics.md
 
 site_url: !ENV READTHEDOCS_CANONICAL_URL
