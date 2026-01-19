@@ -3,6 +3,8 @@
 ## Оглавление
 
  - [Обзор](overview/)
+     - [Что такое Comsign PWA](overview/#what_is_comsign_pwa)
+     - [Основные возможности](#features)
  - [Быстрый старт](start/)
  - [Личный кабинет](clients_area/)
  - [Конструктор](sections/builder/)
