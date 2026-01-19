@@ -6,7 +6,6 @@
      - [Что такое Comsign PWA](overview/#what_is_comsign_pwa)
      - [Основные возможности](#features)
  - [Быстрый старт](start/)
-     - [Создание первого PWA](start/#first_pwa)
  - [Главная](main/)
      - [Статусы PWA](main#pwa_status)
      - [Управление готовыми PWA](main#pwa_edit)
