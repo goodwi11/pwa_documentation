@@ -16,4 +16,6 @@
      - [Пуши](sections/builder/#push)
      - [Клоакинг](sections/builder/#cloaking)
  - [Push-уведомления](sections/push/)
+     - [Обзор раздела](sections/push/#push_overview)
+     - [Создание пуша](sections/push/#push_creation)
  - [Статистика](sections/statistics/)
