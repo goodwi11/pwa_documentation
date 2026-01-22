@@ -132,3 +132,24 @@ footer.md-footer,
 div[class*="readthedocs"] {
   display: none !important;
 }
+
+/* ReadTheDocs Ethical Ads - specific */
+.raised.adaptive-css-loaded,
+.ea-placement,
+.ea-type-text,
+.ea-content,
+.ea-callout,
+div[data-ea-publisher="readthedocs"],
+div[data-ea-publisher],
+div[id="readthedocs-ea-text-nostyle-nodoctool"],
+div[id^="readthedocs-ea"],
+div[class*="ea-placement"],
+div[class*="ea-type"] {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  left: -9999px !important;
+}
