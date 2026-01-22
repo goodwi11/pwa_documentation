@@ -106,3 +106,29 @@ code, code *, pre, pre * {
 .md-footer {
   display: none;
 }
+
+/* Hide ReadTheDocs ads */
+.ethical-ads,
+.ethical-ads-placement,
+.ea-placement,
+.ea-content,
+.ea-callout,
+[data-ea-publisher],
+div[id^="rtd-"],
+div[class*="ethical"],
+.rst-versions,
+.injected,
+#ethical-ad-placement,
+readthedocs-flyout {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+
+/* Footer with ads */
+footer.md-footer,
+.md-footer-meta,
+div[class*="readthedocs"] {
+  display: none !important;
+}
