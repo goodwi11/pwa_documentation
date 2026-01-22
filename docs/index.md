@@ -12,7 +12,7 @@
  - [Конструктор](sections/builder/)
      - [Основное](sections/builder/#main)
      - [Домен](sections/builder/#domain)
-     - [Контент](sections/builder/#contenыt)
+     - [Контент](sections/builder/#content)
      - [Пуши](sections/builder/#push)
      - [Клоакинг](sections/builder/#cloaking)
  - [Push-уведомления](sections/push/)
