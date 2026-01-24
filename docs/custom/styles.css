@@ -9,8 +9,8 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  font-weight: 700;
-  letter-spacing: -.03em;
+  font-weight: 700 !important;
+  letter-spacing: -.03em !important;
 }
 
 h1 {
@@ -19,16 +19,23 @@ h1 {
 
 /* Links */
 a {
-  color: #295ada;
-  font-weight: 600;
+  color: #295ada !important;
+  font-weight: 600 !important;
 }
 
 a:hover {
-  color: #214cbc;
+  color: #214cbc !important;
 }
 
-/* Sidebar */
+/* ===========================================
+   SIDEBAR
+   =========================================== */
+
 .wy-nav-side {
+  background: #000 !important;
+}
+
+.wy-side-scroll {
   background: #000 !important;
 }
 
@@ -40,21 +47,48 @@ a:hover {
   background: #000 !important;
 }
 
-/* Sidebar menu text */
+/* Sidebar Logo */
+.wy-side-nav-search img {
+  max-width: 200px !important;
+  height: auto !important;
+  background: transparent !important;
+}
+
+/* Sidebar Search */
+.wy-side-nav-search input[type=text] {
+  border: none !important;
+  border-radius: 6px !important;
+  background: #222 !important;
+  color: #fff !important;
+}
+
+.wy-side-nav-search input[type=text]::placeholder {
+  color: #888 !important;
+}
+
+/* Sidebar Menu Links */
 .wy-menu-vertical a,
-.wy-menu-vertical li a {
+.wy-menu-vertical li a,
+.wy-menu-vertical li.toctree-l1 > a,
+.wy-menu-vertical li.toctree-l2 > a,
+.wy-menu-vertical li.toctree-l3 > a {
+  color: #fff !important;
+  background: transparent !important;
+}
+
+.wy-menu-vertical a:hover,
+.wy-menu-vertical li a:hover {
+  background: #333 !important;
   color: #fff !important;
 }
 
-.wy-menu-vertical a:hover {
-  background-color: #333 !important;
-  color: #fff !important;
-}
-
+/* Active menu items */
 .wy-menu-vertical li.current > a,
-.wy-menu-vertical li.current a,
-.wy-menu-vertical li.on a {
-  background-color: #222 !important;
+.wy-menu-vertical li.current a:first-child,
+.wy-menu-vertical li.on > a,
+.wy-menu-vertical li.toctree-l1.current > a,
+.wy-menu-vertical li.toctree-l2.current > a {
+  background: #222 !important;
   color: #fff !important;
   border: none !important;
 }
@@ -63,45 +97,88 @@ a:hover {
   background: #111 !important;
 }
 
-.wy-menu-vertical li.toctree-l1.current > a {
-  border: none !important;
+.wy-menu-vertical li ul li a {
+  color: #ccc !important;
 }
 
-/* Top nav */
+/* Remove borders from menu */
+.wy-menu-vertical li.toctree-l1.current > a,
+.wy-menu-vertical li.toctree-l2.current > a,
+.wy-menu-vertical li.toctree-l3.current > a {
+  border: none !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+/* Expand buttons */
+.wy-menu-vertical .toctree-expand {
+  color: #fff !important;
+}
+
+/* ===========================================
+   TOP NAVIGATION
+   =========================================== */
+
 .wy-nav-top {
   background: #000 !important;
 }
 
-/* Logo */
-.wy-side-nav-search img {
-  max-width: 200px;
-  height: auto;
-  background: transparent !important;
+.wy-nav-top a {
+  color: #fff !important;
 }
 
-/* Search */
-.wy-side-nav-search input[type=text] {
-  border: none !important;
-  border-radius: 6px !important;
+.wy-nav-top i {
+  color: #fff !important;
 }
 
-/* Content area */
-.wy-nav-content-wrap,
-.wy-nav-content {
+/* ===========================================
+   CONTENT AREA
+   =========================================== */
+
+.wy-nav-content-wrap {
   background: #fff !important;
 }
 
-/* Tables */
+.wy-nav-content {
+  background: #fff !important;
+  max-width: 900px !important;
+}
+
+.rst-content {
+  background: #fff !important;
+}
+
+/* Breadcrumbs */
+.wy-breadcrumbs {
+  background: transparent !important;
+}
+
+.wy-breadcrumbs a {
+  color: #295ada !important;
+}
+
+.wy-breadcrumbs-aside {
+  display: none !important;
+}
+
+/* ===========================================
+   TABLES
+   =========================================== */
+
+.wy-table-responsive table,
+table.docutils {
+  width: 100% !important;
+}
+
 .wy-table-responsive table td,
 .wy-table-responsive table th {
   white-space: initial !important;
 }
 
-table.docutils {
-  width: 100% !important;
-}
+/* ===========================================
+   CODE
+   =========================================== */
 
-/* Code */
 code, code *, pre, pre * {
   font-family: "Space Mono", monospace !important;
 }
@@ -112,31 +189,54 @@ code {
   color: #dc3545 !important;
   background: transparent !important;
   border: none !important;
+  padding: 0 !important;
 }
 
-/* Hide elements */
-.wy-breadcrumbs-aside,
-.rst-versions,
-footer,
-.ethical-rtd {
+/* ===========================================
+   ADMONITIONS (Notes, Warnings, etc.)
+   =========================================== */
+
+.admonition {
+  border-radius: 4px !important;
+}
+
+/* ===========================================
+   FOOTER
+   =========================================== */
+
+footer {
   display: none !important;
 }
 
-/* Hide ReadTheDocs ads */
+.rst-versions {
+  display: none !important;
+}
+
+/* ===========================================
+   HIDE ADS
+   =========================================== */
+
 .raised.adaptive-css-loaded,
 .ea-placement,
 .ea-type-text,
 .ea-content,
 .ea-callout,
 div[data-ea-publisher],
+div[data-ea-publisher="readthedocs"],
 div[id^="readthedocs-ea"],
+div[id="readthedocs-ea-text-nostyle-nodoctool"],
 div[class*="ea-placement"],
 div[class*="ea-type"],
-div[class*="ethical"] {
+div[class*="ethical"],
+.ethical-ads,
+.ethical-ads-placement,
+#ethical-ad-placement,
+readthedocs-flyout {
   display: none !important;
   visibility: hidden !important;
   height: 0 !important;
   width: 0 !important;
+  overflow: hidden !important;
   position: absolute !important;
   left: -9999px !important;
 }
