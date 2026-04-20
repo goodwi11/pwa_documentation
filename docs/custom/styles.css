@@ -27,16 +27,6 @@ a:hover {
   color: #214cbc !important;
 }
 
-.wy-side-nav-search a img.logo.alt-logo,
-.wy-side-nav-search a img.logo,
-.wy-side-nav-search img.logo {
-  width: 100% !important;
-  max-width: 100% !important;
-  height: auto !important;
-  display: block !important;
-  margin: 0 auto !important;
-}
-
 /* ===========================================
    SIDEBAR
    =========================================== */
@@ -59,7 +49,7 @@ a:hover {
 
 /* Sidebar Logo */
 .wy-side-nav-search img {
-  max-width: 200px !important;
+  max-width: 100% !important;
   height: auto !important;
   background: transparent !important;
 }
