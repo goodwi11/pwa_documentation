@@ -49,6 +49,7 @@ a:hover {
 
 /* Sidebar Logo */
 .wy-side-nav-search img {
+  width: 100% !important;
   max-width: 100% !important;
   height: auto !important;
   background: transparent !important;
