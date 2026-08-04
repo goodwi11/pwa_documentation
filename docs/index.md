@@ -21,6 +21,8 @@
          - [Контакты разработчика](sections/builder/#contacts)
      - [Пуши](sections/builder/#push)
      - [Аналитика](sections/builder/#analitycs)
+         - [Входящие постбеки](sections/builder/#incoming_postbacks)
+         - [Исходящие постбеки](sections/builder/#outgoing_postbacks)
      - [Клоакинг](sections/builder/#cloaking)
          - [Настройки параметров фильтрации](sections/builder/#settings)
          - [Настройка вайта](sections/builder/#safe_page)
